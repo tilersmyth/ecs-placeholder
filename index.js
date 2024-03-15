@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 5000;
 
 app.get("/", function (req, res) {
   res.send('ECS placeholder app')
 });
 
-app.get("/api/health", function (req, res) {
+app.get("/health", function (req, res) {
     res.status(200).json({status:"ok"})
 });
 
